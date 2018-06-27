@@ -1,4 +1,202 @@
-<!doctype HTML>
-<h1>Islamic Mercy New Zealand</h1>
-<p>Website coming soon...</p>
-<hr />
+<!DOCTYPE html>
+<html>
+<title>IMNZ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="shortcut icon" href="favicon.ico" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: grey
+}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.9;cursor:pointer}
+.w3-half img:hover{opacity:1}
+/*Colors*/
+.w3-darkgreen {background-color: #004519; color: white}
+.w3-text-darkgreen {color: #004519}
+hr {width:50px;border:5px solid #004519}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-darkgreen w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <img src="https://i.imgur.com/DnW3kDU.jpg" style="width:100%"/>
+  <!-- <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Islamic Mercy<br>New Zealand</b></h3>
+  </div> -->
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#photos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our People</a>
+    <a href="#missions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Missions</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Projects</a>
+    <a href="#donate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Donate</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-darkgreen w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-darkgreen w3-margin-right" onclick="w3_open()">☰</a>
+  <span style="white-space:nowrap">IMNZ</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px">
+    <h1 class="w3-jumbo" style="text-align:center"><b>Islamic Mercy New Zealand</b></h1>
+    <h1 class="w3-xlarge" style="font-style:italic;text-align:center">One God, One Human Race, One Message</h1>
+    <h1 class="w3-medium" style="font-style:italic;text-align:center">Mercy, Equality, Love, Peace</h1>
+    <h1 class="w3-xxxlarge w3-text-darkgreen" id="photos"><b>Our People</b></h1>
+    <hr  class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://i.imgur.com/KHTo6UF.jpg" style="width:100%" onclick="onClick(this)" alt="Photo">
+      <img src="https://i.imgur.com/Qtq72cc.jpg" style="width:100%" onclick="onClick(this)" alt="Photo">
+      <img src="https://i.imgur.com/bVynn0E.jpg" style="width:100%" onclick="onClick(this)" alt="Photo">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://i.imgur.com/0bXz88o.jpg" style="width:100%" onclick="onClick(this)" alt="Photo">
+      <img src="https://i.imgur.com/RIBeVW3.jpg" style="width:100%" onclick="onClick(this)" alt="Photo">
+      <img src="https://i.imgur.com/bQAiXUH.jpg" style="width:100%" onclick="onClick(this)" alt="Photo">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Missions -->
+  <div class="w3-container" id="missions" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-darkgreen"><b>Our Missions</b></h1>
+    <hr  class="w3-round">
+    <p>Our mission is to help those most in need in our communities, regardless of race or religion. To follow the examples set by Prophet Mohammed (pbuh) on how to treat our fellow human being, flora, fauna and environment.
+    </p>
+    <p>
+      We are a Charitable Org, helping those most in need in our communities. We see no race, no colour, no creed. Only mercy, love, equality and peace.
+    </p>
+  </div>
+
+  <!-- Projects -->
+  <div class="w3-container" id="projects" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-darkgreen"><b>Our Projects</b></h1>
+    <hr  class="w3-round">
+    <h1 class="w3-xlarge w3-text-darkgreen">Auckland City Mission Project</h1>
+    <p>
+      This project aims to guarantee meals for all clients attending dinner service at the Auckland City Mission. At this stage we are trying to fill all Sundays in the year to come. All Mosques under NZMA (New Zealand Muslim Association) are urged to join us and take up a Sunday each month. The minor Islamic centers are urged to fill remaining days in the week if possible. So far we have Avondale Islamic Center (NZMA) and Mt Roskill Masjid, not under NZMA who have expressed a keen interest alhamdulillah.
+    </p>
+    <h1 class="w3-xlarge w3-text-darkgreen">Youth Projects</h1>
+    <p>
+      This is a very generalised project. We want our youth to help those in their immediate neighbourhood. At this stage its more about mowing lawns, helping people across the street, washing cars, taking out garbage, bringing bins back in etc. This project is still largely undefined. However, will be based on being a good person and supporting the community you live in, as per Islamic teachings and the ways of Prophet Mohammed (pbuh).
+    </p>
+    <h1 class="w3-xlarge w3-text-darkgreen">Companionship for the Elderly</h1>
+    <p>
+      This project aims to encourage our retired and able bodied brothers and sisters to visit their nearest retirement homes with the intention to make friends and provide some friendly banter. If they know of neighbours or others in the community immediate to their homes by all means they should visit them. A cup of tea and biscuits shared with a friendly face, some stories from yesteryear etc is all that is required. We believe our elderly are extremely important and need to be looked after and treated with the utmost respect. This is what Islam teaches us.
+    </p>
+  </div>
+
+  <!-- Donate -->
+  <div class="w3-container" id="donate" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-darkgreen"><b>Donate</b></h1>
+    <hr  class="w3-round">
+    <p>
+      We need all the help we can get to provide a better community for those in need.  If there is anything at
+      all you can give, it will be most appreciated.
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-darkgreen w3-xlarge w3-padding-32">Any amount helps</li>
+        <li class="w3-padding-16">
+          <h3>Bank Account Number</h3>
+          <span class="w3-opacity">12-3449-0521133-00</span><br />
+          <span class="w3-opacity">Team IMNZ</span>
+
+        </li>
+        <li class="w3-padding-16">
+          <h3>SWIFT Code</h3>
+          <span class="w3-opacity">ASBBNZ2A</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-darkgreen"><b>Contact</b></h1>
+    <hr  class="w3-round">
+    <p>
+      If you have any enquiries about what we do, or, if you want to join us in helping the community,
+      feel free to send us a message blow.
+    </p>
+    <form action="mailto:imnz.charity@gmail.com" method="post" enctype="text/plain">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" requidarkgreen>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" requidarkgreen>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" requidarkgreen>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-darkgreen w3-margin-bottom">Send Message</button>
+    </form>
+
+    <i class="fab fa-facebook-square w3-xlarge w3-text-darkgreen"></i><a class="w3-xlarge w3-padding" target="_blank" href=https://www.facebook.com/TeamIMNZ/>IMNZ on Facebook</a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
